@@ -1,0 +1,30 @@
+GET http://localhost:3000/books
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "name": "End of History and the Last Man",
+    "author": "Francis Fukuyama",
+    "publisher": "Free Press",
+    "publicationDate": "March 2006"
+}
+
+###
+
+GET http://localhost:3000/books/62dd8f33a05c41e697359045
+
+###
+
+PATCH http://localhost:3000/books/62dd8f33a05c41e697359045
+Content-Type: application/json
+
+{
+    "author": "John Ronald Reuel Tolkien"
+}
+
+###
+
+DELETE http://localhost:3000/books/62dd8f33a05c41e697359045
